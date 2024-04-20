@@ -1,0 +1,145 @@
+/* Stile per il body */
+body {
+  background-image: url(e260d74a760d1c86359d.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Stile per l'h1 */
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 23%;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar{
+  height: 50px;
+  width: 100%;
+  max-width: 700px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  
+}
+.search-bar input{
+  background: transparent;
+  flex:1;
+  border:0;
+  outline: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  color: rgb(2, 2, 79);
+}
+
+::placeholder {
+  color: rgba(2, 2, 79, 0.7); 
+}
+
+
+.search-bar button img{
+  width: 25px;
+}
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgb(2, 2, 79);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: black; 
+  width: 100%;
+  color: whitesmoke;
+  text-align: center; 
+  padding: 10px; 
+  width: 100%; /* Larghezza al 100% */
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  height: 10h;
+}
+
+.footer p {
+  display: inline-block;
+}
+
+
+#logo {
+ vertical-align: middle;
+ border-radius: 20px 20px 20px 20px;
+
+}
+
+#logo1 {
+  vertical-align: middle; 
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Media query per dispositivi mobili */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px; 
+    margin-top: 10%; 
+  }
+
+  .search-bar {
+    padding: 8px; 
+  }
+
+  .search-bar input {
+    padding: 8px; 
+    font-size: 14px; 
+  }
+
+  .search-bar button img {
+    width: 15px; 
+  }
+
+  .search-bar button {
+    width: 30px; 
+    height: 30px; 
+  }
+}
+
+/* Media query per tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 36px; 
+    margin-top: 15%; 
+  }
+
+  .search-bar {
+    width: 80%; 
+    max-width: 500px; 
+    padding: 10px 16px; 
+  }
+
+  .search-bar input {
+    padding: 10px 16px; 
+    font-size: 18px;
+  }
+
+  .search-bar button img {
+    width: 18px; 
+  }
+
+  .search-bar button {
+    width: 40px; 
+    height: 40px; 
+  }
+}
+
