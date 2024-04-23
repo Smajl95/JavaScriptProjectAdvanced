@@ -29,8 +29,8 @@ h1 {
   align-items: center;
   border-radius: 60px;
   padding: 10px 20px;
-  
 }
+
 .search-bar input{
   background: transparent;
   flex:1;
@@ -44,7 +44,6 @@ h1 {
 ::placeholder {
   color: rgba(2, 2, 79, 0.7); 
 }
-
 
 .search-bar button img{
   width: 25px;
@@ -63,23 +62,20 @@ h1 {
 #categoryImages {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Per distribuire gli elementi uniformemente */
-  
+  justify-content: center; /* Modificato per centrare gli elementi */
 }
 
 .book {
-  width: calc(15% - 10px); /* Larghezza di ogni libro, con spaziatura tra i libri */
+  width: calc(30% - 20px); /* Modificato per occupare una riga su dispositivi mobili */
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 20px; /* Modificato per ridurre lo spazio superiore */
   background-color: black; /* Sfondo nero */
   padding: 10px; /* Aggiunta di padding per separare il contenuto dal bordo */
   border-radius: 10px;
-  
 }
 
 .book img {
   width: 100%; /* Immagine del libro occupa tutta la larghezza del suo contenitore */
-  
   border-radius: 10px;
 }
 
@@ -88,9 +84,6 @@ h1 {
   color: whitesmoke;
   font-size: 20px;
 }
-
-
-
 
 .footer {
   background-color: black; 
@@ -109,11 +102,9 @@ h1 {
   display: inline-block;
 }
 
-
 #logo {
- vertical-align: middle;
- border-radius: 20px 20px 20px 20px;
-
+  vertical-align: middle;
+  border-radius: 20px 20px 20px 20px;
 }
 
 #logo1 {
@@ -123,6 +114,10 @@ h1 {
 
 /* Media query per dispositivi mobili */
 @media only screen and (max-width: 600px) {
+  .book {
+    width: calc(100% - 20px); /* Modificato per occupare l'intera larghezza */
+  }
+
   h1 {
     font-size: 30px; 
     margin-top: 10%; 
@@ -173,4 +168,16 @@ h1 {
     width: 40px; 
     height: 40px; 
   }
+
+  /* Margine inferiore per separare i libri */
+  .book {
+    margin-bottom: 20px;
+  }
+  
+  /* Margine laterale per separare i libri */
+  .book {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
+
