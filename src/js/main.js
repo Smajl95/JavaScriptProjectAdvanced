@@ -1,3 +1,27 @@
+// Function to handle the case when no results are found
+function handleNoResults() {
+  // Get the book container from the HTML page
+  const categoryImageContainer = document.getElementById("categoryImages");
+  // Clear the previous content inside the container
+  categoryImageContainer.innerHTML = ""; // Remove previous books
+
+  // Create a paragraph element to display the "no results found" message
+  const noResultsMessage = document.createElement("p");
+  noResultsMessage.textContent = "No results found.";
+  // Add styles to the message
+  noResultsMessage.style.color = "whitesmoke";
+  noResultsMessage.style.fontSize = "20px";
+  noResultsMessage.style.textAlign = "center";
+
+  // Add the message to the book container
+  categoryImageContainer.appendChild(noResultsMessage);
+
+  // Show an alert to notify the user that the search yielded no meaningful results
+  alert("The search did not yield any meaningful results.");
+} 
+
+
+
 // Funzione asincrona per recuperare i dati dalla API
 async function fetchData(categories) {
   try {
@@ -7,7 +31,10 @@ async function fetchData(categories) {
     return response.data;
   } catch (error) {
     // Se si verifica un errore, stampa un messaggio di errore nella console
-    console.error("Si è verificato un errore durante il recupero dei dati. Riprova più tardi.");
+    console.error("An error occurred while retrieving the data. Please try again later.");
+
+    // Chiamata alla funzione per gestire il caso di nessun risultato trovato
+    handleNoResults();
     // Rilancia l'errore per gestirlo altrove, se necessario
     throw error;
   }
@@ -81,6 +108,6 @@ document.getElementById("searchForm").addEventListener("submit", async function(
     displayBooks(data.works);
   } catch (error) {
     // Se si verifica un errore durante il recupero dei dati, mostra un messaggio di errore all'utente
-    alert("Si è verificato un errore durante il recupero dei dati. Riprova più tardi.");
+    alert("An error occurred while retrieving the data. Please try again later.");
   }
 });
