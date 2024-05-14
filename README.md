@@ -3,7 +3,8 @@
 
 
 
-<img src=""C:\Users\ale_s\OneDrive\Immagini\Catture di schermata\Screenshot 2024-04-20 172054.png"">
+![Screenshot 2024-04-20 172054](https://github.com/Smajl95/JavaScriptProjectAdvanced/assets/153779435/9f294b05-c23d-43ad-98ee-14a433ee0fd3)
+
 
 # The Project
 Welcome to The Fabolous Books project! This project is a web application for searching and exploring books based on different categories. It uses webpack-cli for bundling the application.
