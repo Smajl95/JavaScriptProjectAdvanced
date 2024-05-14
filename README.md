@@ -1,32 +1,38 @@
-# Orizion Project
+# The Fabolous Books 📚
 
 
 
 
+<img src=""C:\Users\ale_s\OneDrive\Immagini\Catture di schermata\Screenshot 2024-04-20 172054.png"">
 
-
-Welcome to the Orizon Travel Agency project! This project aims to create a web application for managing travel destinations and offers.
-
+# The Project
+Welcome to The Fabolous Books project! This project is a web application for searching and exploring books based on different categories. It uses webpack-cli for bundling the application.
 
 
 
 
 Features
-Destinations Management: CRUD operations for managing travel offers.
-Offers Management: CRUD operations for managing travel offers associated with offers.
-RESTful API: Provides RESTful endpoints for interacting with  offers data.
-MySQL Database: Uses MySQL database for storing destinations and offers information.
-
-
+Search for books by category
+View book covers and descriptions
+Developed using webpack-cli for bundling
 
 Technologies Used
-- PHP
-- XAMPP (for local server)
-- Postman (for API testing)
-- MySql for Database creation
+- HTML
+- CSS
+- JavaScript
+- webpack-cli
+- Axios
+- lodash
 
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 Author
 Developed by Alessandro Smajlovic.
+
+
+# Contact
+Contact me!
+[Linkedin](https://www.linkedin.com/in/alessandrosmajlovic/)
 
 
